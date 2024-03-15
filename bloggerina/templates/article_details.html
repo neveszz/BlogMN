@@ -1,0 +1,24 @@
+{%extends 'base.html' %}
+
+{% block title %}
+      {{post.title_tag}}
+{% endblock title %}
+   
+
+   
+
+
+{% block content %}
+
+<h1> {{post.title}} 
+</h1>
+<hr>
+<h3> {{post.body}} </h3>
+
+<br><br>
+<a href="{% url 'home'  %}" class="btn btn-info">Go Back</a></button><br/>
+    
+   <small> <p> Posted by: {{post.author}}  </p> </small>
+
+
+{% endblock  %}
